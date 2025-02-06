@@ -15,8 +15,7 @@ public class javais {
 		final int 판돈=1000; //final는 변경 되면 안되는 값(다른 개발자가 건드리지 못하게 하도록, 나만 바꿔서 쓸 수 있음.)
 		int win=0; //반복문 안에 하면 안됨. 반복문 안에 넣어버리면 0으로 계속 초기화 되버림
 		
-		while(true) {
-			
+		while(true) {			
 			int coin = (int)(Math.random() *2 +1); //1앞 2뒤
 			System.out.println("1.앞면, 2.뒷면 : ");
 			int user = scan.nextInt();
