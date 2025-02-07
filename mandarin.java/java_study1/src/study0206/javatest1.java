@@ -27,6 +27,38 @@ public class javatest1 {
 		 5판을 진행 했을 때 몇승 몇패 몇무 인지 출력
 		*/
 		
+		//베스킨라빈스게임
+		Scanner sc = new Scanner(System.in);
+		int me=0, com=0, num=1;
+		
+		while(true) {// 언제 31이 나올지 모르니 무한루프로 전체를 반복
+			
+			System.out.print("숫자 몇개: ");
+			me = sc.nextInt();
+			// 1~3사이 값 입력했는지 체크하는 반복문 만들면 좋겠지요
+			System.out.print("나: ");
+			for(int i=1; i<=me; i++) {
+				System.out.print((num++) +"  ");
+				if( num == 32 ) break; //for 문에 적용되는 break임 while에는 영향 ㄴㄴㄴ
+			}
+			if(num == 32) {
+				System.out.println("내가 졌다...");
+				break;// while 종료시켜주는 break
+			}
+			
+			com = (int)(Math.random()*3 + 1); //1~3개 중 하나
+			System.out.print("\n컴퓨터: ");
+			for(int i=1; i<=com; i++) {
+				System.out.print((num++) + " ");
+				if(num == 32) {
+					System.out.println("컴퓨터 패배!!!");
+					break; //while 종료
+				}
+			}
+			
+		}
+		
+		
 		
 		}
 		}
