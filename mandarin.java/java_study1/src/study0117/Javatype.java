@@ -16,7 +16,7 @@ public class Javatype {
 		int 한개피단축 = 2;
 		int 단축수명 = 하루담배 * 한개피단축 * 일년 * 흡연기간;
 		int 단축수명시간 = 단축수명 * 60(1분);
-		int 단축수명일 = 단축수명시간 / 24(일);
+		int 단축수명일 = 단축수명시간 / 24(시간);
 		System.out.println("총 단축시간(분) : " + 단축수명);
 		System.out.println("총 단축시간(시간) : " + 단축수명시간);
 		System.out.println("총 단축시간(일)  : " + 단축수명일);
