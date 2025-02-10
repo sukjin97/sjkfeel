@@ -44,7 +44,17 @@ public class javaone {
 		//문제 7 - 알파벳 찾기(반드시 반복문 사용해서)
 		//알파벳(대문자 또는 소문자 모두 가능하게) 입력
 		//입력한 알파벳이 몇번째 알파벳인지 찾기 - 반드시 for문으로
-		
+	    Scanner scan = new Scanner(System.in);
+		System.out.print("알파벳 입력: ");
+	    char alp = scan.nextLine().charAt(0);
+	    // 아스키 코드에서 A - 65(10진수), a-97(10진스)
+	    for(int i = 1 ; i<=26; i++) {
+	    	if(alp==(i+64) || alp==(i+96)) {
+	    		System.out.printf("알파벳 %c 는 %d번째 알파벳 \n",
+	    				alp, i);
+	    		break;
+	    	}
+	    }
 		
 		
 		//오늘의 과제 - 숫자 야구
