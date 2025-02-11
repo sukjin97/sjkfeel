@@ -137,6 +137,8 @@ Scanner sc = new Scanner(System.in);
 // 숫자 중복 상관 없음 //빨리 끝나면 중복 없이도 한번 해보기
 
 
+
+
 }
 
 
