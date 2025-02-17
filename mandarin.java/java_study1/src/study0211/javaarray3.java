@@ -40,8 +40,34 @@ public class javaarray3 {
     	   }
        }
        //빙고 게임은 5줄 빙고 되면 종료
+       int bingo = 0;
+       int 가로=0, 세로=0, 대각선1=0, 대각선2=0;
        
+       for(int i=0; i<5; i++) {
+    	   for(int k=0;k<5;k++) {
+    		   if(game[i*5+k]==0)가로++;
+    		   if(game[k*5+i]==0)세로++;
+    			}
+    	   if( game[i*6] ==0 )대각선1++;
+    	   
+    	   if( game[i*4+4] == 0)대각선2++;
+    	   
+    	   if(대각선2 == 5) bingo++; //대각선 빙고 확인
+    	   if(대각선1 == 5) bingo++; //대각선 빙고 확인
+    	   
+    	   
+    	   if(가로==5) bingo++; //가로방향 빙고 확인
+    	   if(세로==5) bingo++; //세로방향 빙고 확인
+    	   
+    	   가로=0;
+    	   세로=0;
+    	   }
+       if(bingo==5) {
+    	   System.out.println("5줄 빙고 끝!!!");
+    	   break;
+       }
+       }
        
 	}
 
-	}}
+	}
