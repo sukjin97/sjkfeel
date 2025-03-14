@@ -1,0 +1,25 @@
+package collection5;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Mainq {
+
+	public static void main(String[] args) {
+		
+		// FIFO - 구조 (선입선출)
+		
+		Queue<Integer> q = new LinkedList<>(); //q는 가장 먼저 들어온게 가장 먼저 나간다.그리고 제일 마지막에 나온 녀석이 가장 나중에 나간다.
+		
+		q.offer(100);
+		q.offer(20);
+		q.offer(343);
+		
+		System.out.println(q);
+		// 큐에서 내보내기 - 먼저 들어온 순서대로
+		q.poll();
+		System.out.println(q);
+
+	}
+
+}
